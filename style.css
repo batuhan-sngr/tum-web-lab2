@@ -1,3 +1,17 @@
+body {
+    background-color: #FFFFFF;
+    font-family: "Gruppo", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    font-family: "Gruppo", sans-serif;
+    flex: 1;
+    padding-bottom: 4rem; 
 .gruppo-regular {
     font-family: "Gruppo", sans-serif;
     font-weight: 400;
@@ -7,12 +21,17 @@
 body {
     background-color: #FFFFFF;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
 }
 
 header {
     font-family: "Gruppo", sans-serif;
     font-size: 2.5rem;
+
+    font-weight: bold;
+
     font-weight: 400;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,7 +57,11 @@ header {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+
+    font-weight: bold;
+
     font-weight: 500;
+
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
 }
@@ -368,93 +391,522 @@ header {
     .footer-section {
         align-items: center;
     }
-=======
 .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #f8fafc, #fff);
 }
 
 .card {
-  width: 300px;
-  height: 300px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    font-weight: bold;
+    width: 1000px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    height: 100%;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
 }
 
 .card-header p {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    max-width: 800px;
 }
 
 .card-header button {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+    background-color: #4B3FD7;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-family: "Gruppo", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(75, 63, 215, 0.2);
 }
 
 .card-header button:hover {
-  background-color: #333;
+    transform: translateY(-2px);
+    background-color: #3f35b8;
+    box-shadow: 0 6px 12px rgba(75, 63, 215, 0.3);
 }
 
-.card-header button:active {
-  background-color: #000;
+.middle-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
 }
 
-.card-header button:focus {
-  outline: none;
+.middle-card {
+    font-size: 1.35rem;
+    font-weight: bold;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.middle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.middle-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    height: 100%;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.middle-card-header p {
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.middle-card-header button {
+    background-color: #4B3FD7;
+    color: #fff;
+    border: none;
+    padding: 0.875rem 1.75rem;
+    border-radius: 12px;
+    font-family: "Gruppo", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(75, 63, 215, 0.2);
+}
+
+.middle-card-header button:hover {
+    transform: translateY(-2px);
+    background-color: #3f35b8;
+    box-shadow: 0 6px 12px rgba(75, 63, 215, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .card {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .card-header p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .card {
+        height: auto;
+        min-height: 250px;
+    }
+
+    .card-header {
+        padding: 2rem 1.5rem;
+    }
+
+    .card-header p {
+        font-size: 1.125rem;
+    }
+
+    .middle-card-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .middle-card {
+        height: auto;
+        min-height: 250px;
+    }
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #b8aeae;
-  width: 100%;
-  height: 100px;
-  position: fixed;
-  bottom: 0;
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 4rem 0 1rem 0;
+    margin-top: auto;
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .footer-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .footer-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-section h3 {
+    font-family: "Gruppo", sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: #4B3FD7;
+}
+
+.footer-section p {
+    color: #9ca3af;
+    line-height: 1.8;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-link {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 0.1rem;
+    margin-left: -1.5rem;
+    margin-right: 1.5rem;
+    position: relative;
+}
+
+.footer-link:hover {
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.footer-link::before {
+    content: '→';
+    margin-right: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover::before {
+    opacity: 1;
 }
 
 .footer-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #9ca3af;
+    font-family: "Gruppo", sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 3rem 0 1rem 0;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .footer-section {
+        align-items: center;
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer {
+        padding: 0 1.5rem;
+    }
+
+    .footer-link {
+        margin-left: -1rem;
+        margin-right: 0.5rem;
+    }
+}
+
+/* Mascot Styles */
+.mascot-container {
+    position: fixed;
+    bottom: -80px;
+    right: 20px;
+    width: 100px;
+    height: 120px;
+    z-index: 1000;
+    opacity: 0.5;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.mascot-container:hover {
+    bottom: 20px;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.mascot-head {
+    width: 50px;
+    height: 50px;
+    background-color: #d7983f;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    animation: bobbing 3s ease-in-out infinite;
+}
+
+.mascot-head-eye {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    animation: blink 3s infinite;
+}
+
+.mascot-head-eye:first-child {
+    left: 12px;
+}
+
+.mascot-head-eye:last-child {
+    right: 12px;
+}
+
+.mascot-body {
+    width: 60px;
+    height: 40px;
+    background-color: #d7983f;
+    border-radius: 20px;
+    position: relative;
+    margin: -10px auto 0;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.mascot-body-arm {
+    width: 15px;
+    height: 30px;
+    background-color: #d7983f;
+    position: absolute;
+    top: 5px;
+    border-radius: 10px;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.mascot-body-arm:first-child {
+    left: -10px;
+    transform-origin: top right;
+}
+
+.mascot-body-arm:last-child {
+    right: -10px;
+    transform-origin: top left;
+}
+
+.mascot-legs {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: -5px;
+}
+
+.mascot-leg {
+    width: 8px;
+    height: 20px;
+    background-color: #d7983f;
+    border-radius: 4px;
+    animation: wiggle 1s ease-in-out infinite;
+}
+
+.mascot-text-container {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.mascot-text-container-text {
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-width: 200px;
+}
+
+.mascot-text-container-text p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.mascot-text-container-text::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+}
+
+.mascot-container:hover .mascot-text-container {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Mascot Animations */
+@keyframes mascotAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bobbing {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+}
+
+@keyframes blink {
+    0%, 48%, 52%, 100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.1);
+    }
+}
+
+/* Mobile Responsiveness for Mascot */
+@media (max-width: 768px) {
+    .mascot-container {
+        width: 80px;
+        height: 100px;
+        bottom: -60px;
+        right: 15px;
+    }
+
+    .mascot-container:hover {
+        bottom: 15px;
+    }
+
+    .mascot-head {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mascot-body {
+        width: 50px;
+        height: 35px;
+    }
+
+    .mascot-text-container-text {
+        min-width: 150px;
+        padding: 8px 15px;
+    }
+
+    .mascot-text-container-text p {
+        font-size: 12px;
+    }
 }
 
 
