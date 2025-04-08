@@ -398,6 +398,7 @@ header {
     justify-content: center;
     gap: 4rem;
     padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #f8fafc, #fff);
 }
 
 .card {
