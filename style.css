@@ -12,26 +12,12 @@ main {
     font-family: "Gruppo", sans-serif;
     flex: 1;
     padding-bottom: 4rem; 
-.gruppo-regular {
-    font-family: "Gruppo", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-body {
-    background-color: #FFFFFF;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-
 }
 
 header {
     font-family: "Gruppo", sans-serif;
     font-size: 2.5rem;
-
     font-weight: bold;
-
-    font-weight: 400;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,11 +43,7 @@ header {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-
     font-weight: bold;
-
-    font-weight: 500;
-
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
 }
@@ -165,232 +147,6 @@ header {
     }
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-}
-
-.card {
-    width: 1000px;
-    height: 300px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-.card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.card-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    height: 100%;
-}
-
-.card-header p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.card-header button {
-    background-color: #4B3FD7;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 15px;
-    font-family: "Gruppo", sans-serif;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.card-header button:hover {
-    transform: scale(1.08);
-    transition: transform 0.3s ease;
-    background-color: #2a218b;
-}
-
-.card-header button:active {
-    background-color: #000;
-}
-
-.card-header button:focus {
-    outline: none;
-}
-
-.middle-card-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.middle-card {
-    width: 300px;
-    height: 300px;
-    background-color: #e2fbf9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-.middle-card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.middle-card-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    height: 100%;
-}
-
-.middle-card-header p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.middle-card-header button {
-    background-color: #4B3FD7;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-family: "Gruppo", sans-serif;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.middle-card-header button:hover {
-    transform: scale(1.08);
-    border-radius: 15px;
-    transition: transform 0.3s ease, border-radius 0.3s ease;
-    color: #FFFFFF;
-    background-color: #5a51c5;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.middle-card-header button:hover::after {
-    content: attr(textContent);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 0.3s ease;
-    font-size: 2rem;
-    color: #333;
-    z-index: 2;
-}
-
-.middle-card-header button:active {
-    background-color: #000;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #4B3FD7;
-    width: 100%;
-    padding: 2rem 0;
-    margin-top: 2rem;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    color: #FFFFFF;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 2rem;
-    font-size: 1.1rem;
-}
-
-.footer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: #FFFFFF;
-}
-
-.footer-section h3 {
-    font-family: "Gruppo", sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.footer-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    margin-top: 2rem;
-    font-family: "Gruppo", sans-serif;
-}
-
-.footer-link {
-    display: flex;
-    flex-direction: column;
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 1.1rem;
-}
-
-.footer-link:hover {
-    color: #e2fbf9;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .middle-card-container {
-        flex-direction: column;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .footer-section {
-        align-items: center;
-    }
 .container {
     display: flex;
     flex-direction: column;
