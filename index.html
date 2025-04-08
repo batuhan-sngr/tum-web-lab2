@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4B3FD7',
+              secondary: '#d7983f'
+            },
+            fontFamily: {
+              gruppo: ['Gruppo', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="bg-white">
     <header>RPA
       <div class="navigation-container">
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -27,7 +43,6 @@
         </nav>
       </div>
     </header>
-    <header>RPA</header>
 
     <main>
       <div class="mascot-container">
@@ -49,28 +64,40 @@
         <div class="mascot-text-container">
           <div class="mascot-text-container-text">
             <p>Hello, How can I help you today?</p>
+
           </div>
         </div>
-
       </div>
       <div class="container">
         <div class="card">
           <div class="card-header">
-
             <p>RPA is a technology that automates business processes.</p>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header">
-            <p>RPA helps businesses reduce manual effort and increase efficiency.</p>
-            <button>Get Started</button>
+
+      </div>
+      <div class="container mx-auto px-4 flex flex-col items-center gap-16">
+
+        <div class="w-full max-w-6xl bg-white rounded-[32px] shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.10)] transition-all duration-300">
+          <div class="flex flex-col items-center justify-center p-16 h-[300px]">
+            <p class="font-gruppo text-[2.5rem] leading-[1.2] font-bold text-gray-800 mb-12 max-w-4xl text-center">
+              RPA helps businesses reduce manual effort and increase efficiency.
+            </p>
+            <button class="bg-primary hover:bg-gradient-to-br from-primary to-secondary text-white font-gruppo text-xl font-bold px-12 py-4 rounded-2xl shadow-lg hover:-translate-y-1 transition-all duration-300">
+              Get Started
+            </button>
           </div>
         </div>
-        <div class="middle-card-container">
-          <div class="middle-card">
-            <div class="middle-card-header">
-              <p>What specific business processes would you like to automate?</p>
-              <button>Learn More</button>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
+          <div class="bg-white rounded-[24px] shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.10)] transition-all duration-300">
+            <div class="flex flex-col items-center justify-center p-10 h-[300px] text-center">
+              <p class="font-gruppo text-2xl font-bold text-gray-800 mb-8">
+                What specific business processes would you like to automate?
+              </p>
+              <button class="bg-primary hover:bg-gradient-to-br from-primary to-secondary text-white font-gruppo text-lg font-bold px-10 py-3 rounded-2xl shadow-md hover:-translate-y-1 transition-all duration-300">
+                Learn More
+              </button>
             </div>
 
           </div>
@@ -92,6 +119,31 @@
             <p>What specific business processes would you like to automate?</p>
             <button>Learn More</button>
           </div>
+
+          <div class="bg-white rounded-[24px] shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.10)] transition-all duration-300">
+            <div class="flex flex-col items-center justify-center p-10 h-[300px] text-center">
+              <p class="font-gruppo text-2xl font-bold text-gray-800 mb-8">
+                How much time does your team spend on repetitive tasks?
+              </p>
+              <button class="bg-primary hover:bg-gradient-to-br from-primary to-secondary text-white font-gruppo text-lg font-bold px-10 py-3 rounded-2xl shadow-md hover:-translate-y-1 transition-all duration-300">
+                Calculate ROI
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-[24px] shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.10)] transition-all duration-300">
+            <div class="flex flex-col items-center justify-center p-10 h-[300px] text-center">
+              <p class="font-gruppo text-2xl font-bold text-gray-800 mb-8">
+                Ready to see RPA in action with a personalized demo?
+              </p>
+              <button class="bg-primary hover:bg-gradient-to-br from-primary to-secondary text-white font-gruppo text-lg font-bold px-10 py-3 rounded-2xl shadow-md hover:-translate-y-1 transition-all duration-300">
+                Schedule Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
           <div class="middle-card">
             <div class="middle-card-header">
               <p>How much time does your team spend on repetitive tasks?</p>
@@ -105,6 +157,7 @@
             </div>
           </div>
         </div>
+
     </main>
     <div class="footer-container">
       <footer>
@@ -175,5 +228,4 @@
     </footer>
   </div>
   </body>
-      
 </html>
